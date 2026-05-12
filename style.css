@@ -1,0 +1,50 @@
+body {
+    background-image: url('images/bg-brusquecomdiversao.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container-principal {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+}
+
+.balao-topo-titulo {
+    background-color: white;
+}
+
+.dados-aluno {
+    display: inline-grid;
+    gap: 18px;
+    font-size: large;
+}
+
+.dados-aluno label {
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.dados-aluno input {
+    font-family: "Fredoka", sans-serif;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.botao-estilizacao {
+    border: 5px solid #98c23f;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #b2d548;
+    cursor: pointer;
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
