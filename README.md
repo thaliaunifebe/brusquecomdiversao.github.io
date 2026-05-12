@@ -3,9 +3,9 @@ Site desenvolvido durante a Semana de Curricularização da Unifebe.
 
 Desenvolvido por:
 <br>
-Aline [colocar sobrenome]
+Aline Lorena de Lima
 <br>
-Helena [colocar sobrenome]
+Helena Kempt
 <br>
 Thalia Schorner
 
