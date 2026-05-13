@@ -3,18 +3,18 @@ Site desenvolvido durante a Semana de Curricularização da Unifebe.
 
 Desenvolvido por:
 <br>
-Aline [colocar sobrenome]
+Aline Lorena de Lima
 <br>
-Helena [colocar sobrenome]
+Helena Kempt
 <br>
 Thalia Schorner
 
 <br>
 Como o Jogo "Brusque com Diversão" funciona:
 <br>
-- Inicialmente, a própria criança ou algum responsável maior deverá colocar os dados do aluno, sendo eles nome, idade e escola.
+- Inicialmente, a criança ou responsável deverá colocar os dados do aluno, sendo eles nome, idade e escola.
 <br>
-- Após a inserção dos dados, o jogo, que é basicamente um jogo de perguntas onde há apenas uma resposta correta, irá começar.
+- Após a inserção dos dados, o jogo, composto por perguntas e respostas, irá começar.
 <br>
 - Serão 15 perguntas, cada uma com 3 alternativas e apenas 1 correta. 
 <br>
