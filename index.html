@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-    <title>Brusque com Diversão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title></title>
 </head>
+
 <body>
     <!--Estrutura | Tela Inicial 
     
@@ -19,7 +24,8 @@
     -->
     <div class="container-principal">
         <div class="balao-topo-titulo">
-            <h2>Brusque sem Diversão</h2>
+            <img src="images/nuvem-fundo.png" alt="Balão" class="img-balao">
+            <h2>Brusque com Diversão</h2>
         </div>
         <div class="dados-aluno">
             <label for="nome">Seu nome:</label>
@@ -28,7 +34,9 @@
             <input type="number" id="idade" name="idade" max="10" min="2" placeholder="Escreva sua idade aqui!">
             <label for="nome">Sua escola:</label>
             <input type="text" id="escola" name="escola" placeholder="Escreva o nome da escola aqui!">
-            <button class="botao-estilizacao" type="submit">Começar</button>
+            <form action="perguntas.html">
+                <button class="botao-estilizacao" type="submit">COMEÇAR</button>
+            </form>
         </div>
     </div>
 </body> 
