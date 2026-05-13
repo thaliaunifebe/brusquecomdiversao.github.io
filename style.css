@@ -32,7 +32,7 @@ body {
 
 .dados-aluno {
     display: inline-grid;
-    gap: 18px;
+    gap: 20px;
     font-size: large;
     max-width: 300px;
     margin-left: 200px;
