@@ -1,7 +1,10 @@
 body {
     background-image: url('images/bg-brusquecomdiversao.jpg');
-    background-size: cover;
+    background-size: contain;
+    background-color: #bdefff;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
     margin: 0;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;

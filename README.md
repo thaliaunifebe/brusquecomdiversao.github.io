@@ -19,3 +19,11 @@ Como o Jogo "Brusque com Diversão" funciona:
 - Serão 15 perguntas, cada uma com 3 alternativas e apenas 1 correta. 
 <br>
 - Após cada pergunta, o aluno irá ter um feedback lúdico de sua resposta, e no final do jogo, uma tela final de motivação.
+
+<br>
+<br>
+Estrutura completa com início, meio e fim do jogo. [████-------] 30%
+<br>
+Compatível com navegador Chrome, Firefox e Edge [██████████] 100%
+<br>
+Interface adequada ao público infantil [██████████] 100%
