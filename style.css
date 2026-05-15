@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/bg-brusquecomdiversao.jpg');
+    background-image: url('images/bg-brusquecomdiversao.png');
     background-size: contain;
     background-color: #bdefff;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ audio {
 .balao-topo-titulo h2 {
     position: absolute;
     z-index: 2;
-    top: 155px;
+    top: 190px;
     padding-left: 145px;
     font-size: 45px;
     font-family: "Freckle Face", system-ui;
@@ -54,6 +54,12 @@ audio {
     font-size: large;
     max-width: 300px;
     margin-left: 200px;
+    margin-top: -100px;
+}
+
+.dados-aluno form {
+    display: inline-grid;
+    gap: 20px;
 }
 
 .dados-aluno label {
@@ -99,6 +105,7 @@ audio {
     width: 250px;
     height: 250px;
     transition: transform 0.2s ease;
+  
 }
 
 .audio-container p {
@@ -111,5 +118,6 @@ audio {
 }
 
 .imagens-secao img:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
+    border: 2px dashed black;
 }
