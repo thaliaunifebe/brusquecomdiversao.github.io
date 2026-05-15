@@ -1,0 +1,80 @@
+pergunta10.html
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+<div class="container-principal">
+        <div class="balao-pergunta">
+            <img src="images/nuvem-fundo.png" alt="Balão" class="img-balao">
+            <h2>10 - Brusque é conhecida como a cidade dos:</h2>
+        </div>
+        <div class="imagens-secao">
+            <img src="sapato.png" alt="Imagem 1" title="(1) PRIMEIRA IMAGEM" onclick="acertou('pergunta7.html')">
+            <img src="tecido.png" alt="Imagem 2" title="(2) SEGUNDA IMAGEM" onclick="errou()">
+            <img src="metais.png" alt="Imagem 3" title="(3) TERCEIRA IMAGEM" onclick="errou()">
+        <div class="audio-container">
+            <p>Clique em ▶️ para ouvir a pergunta!</p>
+            <audio controls>
+            <audio controls autoplay>
+                <source src="10.mp3" type="audio/mp3">
+            Seu navegador não suporta este recurso de áudio.
+            </audio>
+        </div>
+</div>
+
+    <!--global-->
+
+    <!-- ÁUDIO ACERTO -->
+    <audio id="audio-acerto">
+        <source src="recurso_audio/proxima.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- ÁUDIO ERRO -->
+    <audio id="audio-erro">
+        <source src="recurso_audio/tente-novamente.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+
+        function acertou(proximaPagina){
+
+            let audio = document.getElementById("audio-acerto")
+            audio.play()
+
+            confetti({
+            particleCount: 1200,
+            spread: 300,
+            startVelocity: 30,
+            origin: { y: 0.6 }
+            })
+
+            document.body.classList.add("fade-out")
+
+            setTimeout(() => {
+                window.location.href = proximaPagina
+            }, 6000)
+
+        }
+
+        function errou(){
+
+            let audio = document.getElementById("audio-erro")
+            audio.play()
+
+            setTimeout(() => {}, 5000)
+        }
+
+    </script>
+</body>
