@@ -5,6 +5,21 @@ body {
     margin: 0;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
+    overflow: hidden;
+    margin-top: 10px;
+    cursor:  url("images/cursor.png"), auto;
+    opacity: 1;
+    transition: opacity 5s ease-out;
+}
+
+a,
+button,
+audio {
+    cursor: url("images/cursor-click.png"), pointer;
+}
+
+.fade-out {
+    opacity: 0;
 }
 
 .container-principal {
@@ -56,7 +71,6 @@ body {
     padding: 10px;
     border-radius: 50px;
     background-color: #b2d548;
-    cursor: pointer;
     font-family: "Fredoka", sans-serif;
     font-weight: bold;
     font-size: xx-large;
@@ -65,7 +79,7 @@ body {
 .balao-pergunta h2 {
     position: absolute;
     z-index: 2;
-    top: 200px;
+    top: 170px;
     padding-left: 190px;
     max-width: 35ch;
     font-size: x-large;
@@ -81,5 +95,17 @@ body {
 .imagens-secao img{
     width: 250px;
     height: 250px;
-    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.audio-container p {
+    font-size: x-large;
+}
+
+.imagens-secao img {
+    border-radius: 50px;
+}
+
+.imagens-secao img:hover {
+    transform: scale(1.08);
 }
