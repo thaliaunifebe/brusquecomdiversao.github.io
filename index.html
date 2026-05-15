@@ -36,6 +36,145 @@
             <input type="text" id="escola" name="escola" placeholder="Escreva o nome da escola aqui!">
             <form action="pergunta1.html">
                 <button class="botao-estilizacao" type="submit">COMEÇAR</button>
+
+<!-- Pergunta 6 -->
+    <div class="pergunta">
+        <h2>6 - Em qual lugar acontece a festa típica de Brusque?</h2>
+
+        <div class="alternativas">
+            <div class="alternativa">
+                <img src="images/villa.jpg" onclick="responder(false)">
+                <p>Villa Schlösser</p>
+            </div>
+
+            <div class="alternativa">
+                <img src="images/casarao.jpg" onclick="responder(false)">
+                <p>Casarão Renaux</p>
+            </div>
+
+            <div class="alternativa">
+                <img src="images/fenarreco.jpg" onclick="responder(true)">
+                <p>Fenarreco</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pergunta 7 -->
+    <div class="pergunta">
+        <h2>7 - Que roupa as pessoas usam na festa típica de Brusque?</h2>
+
+        <div class="alternativas">
+            <div class="alternativa">
+                <img src="images/xadrez.jpg" onclick="responder(false)">
+                <p>Camisa xadrez</p>
+            </div>
+
+            <div class="alternativa">
+                <img src="images/bombacha.jpg" onclick="responder(false)">
+                <p>Bombacha</p>
+            </div>
+
+            <div class="alternativa">
+                <img src="images/frida-fritz.jpg" onclick="responder(true)">
+                <p>Frida e Fritz</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pergunta 8 -->
+    <div class="pergunta">
+        <h2>8 - Onde as pessoas vão em Brusque para comprar roupas?</h2>
+
+        <div class="alternativas">
+            <div class="alternativa">
+                <img src="images/igreja.jpg" onclick="responder(false)">
+                <p>Igreja da Azambuja</p>
+            </div>
+
+            <div class="alternativa">
+                <img src="images/fip.jpg" onclick="responder(true)">
+                <p>FIP</p>
+            </div>
+
+            <div class="alternativa">
+                <img src="images/hotel.jpg" onclick="responder(false)">
+                <p>Hotel Montez</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pergunta 9 -->
+    <div class="pergunta">
+        <h2>9 - Qual é o rio que atravessa Brusque?</h2>
+
+        <div class="alternativas">
+            <div class="alternativa">
+                <img src="images/itajai.jpg" onclick="responder(true)">
+                <p>Rio Itajaí Mirim</p>
+            </div>
+
+            <div class="alternativa">
+                <img src="images/nilo.jpg" onclick="responder(false)">
+                <p>Rio Nilo</p>
+            </div>
+
+            <div class="alternativa">
+                <img src="images/amazonas.jpg" onclick="responder(false)">
+                <p>Rio Amazonas</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pergunta 10 -->
+    <div class="pergunta">
+        <h2>10 - Brusque é conhecida como a cidade dos:</h2>
+
+        <div class="alternativas">
+            <div class="alternativa">
+                <img src="images/sapatos.jpg" onclick="responder(false)">
+                <p>Sapatos</p>
+            </div>
+
+            <div class="alternativa">
+                <img src="images/tecidos.jpg" onclick="responder(true)">
+                <p>Tecidos</p>
+            </div>
+
+            <div class="alternativa">
+                <img src="images/metais.jpg" onclick="responder(false)">
+                <p>Metais</p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="mostrarResultado()">FINALIZAR QUIZ</button>
+
+    <div id="resultado"></div>
+
+    <script>
+
+        let pontos = 0;
+        let respostas = 0;
+
+        function responder(correta){
+
+            respostas++;
+
+            if(correta){
+                pontos++;
+                alert("Resposta correta!");
+            } else {
+                alert("Resposta errada!");
+            }
+        }
+
+        function mostrarResultado(){
+
+            document.getElementById("resultado").innerHTML =
+                `Você acertou ${pontos} de 5 perguntas!`;
+        }
+
+    </script>
             </form>
         </div>
     </div>
