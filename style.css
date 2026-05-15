@@ -3,14 +3,13 @@ body {
     background-size: contain;
     background-color: #bdefff;
     background-repeat: no-repeat;
-    min-height: 100vh;
     background-position: center;
+    min-height: 100vh;
     margin: 0;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     overflow: hidden;
-    margin-top: 10px;
-    cursor:  url("images/cursor.png"), auto;
+    cursor: url("images/cursor.png"), auto;
     opacity: 1;
     transition: opacity 5s ease-out;
 }
@@ -26,40 +25,46 @@ audio {
 }
 
 .container-principal {
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
+    min-height: 100vh;
     display: grid;
+    place-items: center;
+    text-align: center;
 }
 
 .img-balao {
+    width: min(90vw, 700px);
     z-index: 0;
+    position: relative;
+}
+
+.balao-topo-titulo {
     position: relative;
 }
 
 .balao-topo-titulo h2 {
     position: absolute;
     z-index: 2;
-    top: 190px;
-    padding-left: 145px;
-    font-size: 45px;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    margin: 0;
+    font-size: clamp(32px, 4vw, 45px);
     font-family: "Freckle Face", system-ui;
     color: #3a6135;
 }
 
 .dados-aluno {
-    display: inline-grid;
-    gap: 20px;
-    font-size: large;
-    max-width: 300px;
-    margin-left: 200px;
-    margin-top: -100px;
+    display: grid;
+    justify-content: center;
+    font-size: clamp(16px, 1.5vw, 20px);
+    width: min(90vw, 300px);
+    margin: -80px auto 0;
 }
 
 .dados-aluno form {
-    display: inline-grid;
-    gap: 20px;
+    display: grid;
+    gap: 14px;
 }
 
 .dados-aluno label {
@@ -73,6 +78,8 @@ audio {
     border: 2px solid black;
     padding: 10px;
     border-radius: 50px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .botao-estilizacao {
@@ -82,42 +89,53 @@ audio {
     background-color: #b2d548;
     font-family: "Fredoka", sans-serif;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: clamp(24px, 3vw, 32px);
+}
+
+.balao-pergunta {
+    position: relative;
 }
 
 .balao-pergunta h2 {
     position: absolute;
     z-index: 2;
-    top: 170px;
-    padding-left: 190px;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
     max-width: 35ch;
-    font-size: x-large;
+    margin: 0;
+    font-size: clamp(20px, 2vw, 24px);
     font-family: inherit;
     color: #3a6135;
 }
 
 .imagens-secao {
-    display: inline-flex;
-    gap: 40px;
-}
-
-.imagens-secao img{
-    width: 250px;
-    height: 250px;
-    transition: transform 0.2s ease;
-  
-}
-
-.audio-container p {
-    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    gap: clamp(20px, 3vw, 40px);
+    flex-wrap: wrap;
 }
 
 .imagens-secao img {
+    margin-top: -60px;
+    width: clamp(180px, 20vw, 250px);
+    height: clamp(180px, 20vw, 250px);
     border-radius: 50px;
+    transition: transform 0.2s ease;
     cursor: url("images/cursor-click.png"), pointer;
 }
 
 .imagens-secao img:hover {
     transform: scale(1.05);
     border: 2px dashed black;
+}
+
+.audio-container p {
+    font-size: clamp(18px, 2vw, 24px);
+    
+}
+
+.audio-container {
+    margin-top: clamp(-50px, -4vw, -20px);
 }
