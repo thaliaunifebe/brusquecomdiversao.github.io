@@ -104,6 +104,7 @@ audio {
 
 .imagens-secao img {
     border-radius: 50px;
+    cursor: url("images/cursor-click.png"), pointer;
 }
 
 .imagens-secao img:hover {
