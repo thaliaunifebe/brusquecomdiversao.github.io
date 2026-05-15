@@ -12,6 +12,8 @@ body {
     cursor: url("images/cursor.png"), auto;
     opacity: 1;
     transition: opacity 5s ease-out;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 a,
