@@ -22,7 +22,7 @@ Como o Jogo "Brusque com Diversão" funciona:
 
 <br>
 <br>
-Estrutura completa com início, meio e fim do jogo. [████-------] 30%
+Estrutura completa com início, meio e fim do jogo. [██████████] 100%
 <br>
 Compatível com navegador Chrome, Firefox e Edge [██████████] 100%
 <br>
